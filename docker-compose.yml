@@ -23,14 +23,7 @@ services:
       - "traefik.http.routers.cortex.entrypoints=websecure"
       - "traefik.http.routers.cortex.tls.certresolver=letsencrypt"
       - "traefik.http.services.cortex.loadbalancer.server.port=8000"
-    networks:
-      - default
-      - web
 
 volumes:
   aiobs_data:
     driver: local
-
-networks:
-  web:
-    external: true
