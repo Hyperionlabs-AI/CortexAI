@@ -1,3 +1,5 @@
+name: cortexai
+
 services:
   cortex-app:
     build: .
